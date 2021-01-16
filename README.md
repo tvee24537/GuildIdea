@@ -7,9 +7,13 @@ This project is a single-page application made from javascript and rails API. Th
 ## Technologies
 
 ruby '2.6.1'
+
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
+
 gem 'sqlite3'
+
 gem 'fast_jsonapi'
+
 gem 'rack-cors'
 
 Javascript
@@ -19,16 +23,25 @@ Javascript
 Clone this repository
 
 Go into backend folder to set up rails server by cd backend
+
 Run bundle install for Rails
+
 Run db:migrate
+
 Run rails s
+
 Make sure that the Rails server is up
 
 Open another terminal
+
 Go into frontend folder to start up JS server
+
 I use python SimpleHTTPServer; if you wish to use it, install by: sudo apt install python2
+
 Run python2 -m SimpleHTTPServer
+
 Make sure the JS server is up
+
 Go to the address the terminal provide, mine is http://127.0.0.1:8000/
 
 ## License
