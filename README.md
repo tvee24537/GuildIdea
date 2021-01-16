@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project is a single-page application made from javascript and rails API. The project is made to be a tracker of ideas where the idea can be posted from one user and other users can make comments on them. The frontend folder holds javascript, Html, and CSS component of the project and the backend folder holds the Ruby on Rails API components.
+This project is a single-page application made from javascript and rails API. The project is made to be a tracker of questions where the questions can be posted from one user and other users can make comments on them. The frontend folder holds javascript, Html, and CSS component of the project and the backend folder holds the Ruby on Rails API components.
 
 ## Technologies
 
