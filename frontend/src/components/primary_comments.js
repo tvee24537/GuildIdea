@@ -19,13 +19,13 @@ class PrimaryComments {
 		this.logoutButtonDiv = document.getElementById('logout-div')
 	}
 
-	// Adds a 'Post a New Idea' button to the DOM
+	// Adds a 'Ask a New Question' button to the DOM
 	createNewQuestionButton() {
 		this.newQuestionFormDiv.innerHTML = ""
 		const new_prime_comment_button = document.createElement('button')
 		new_prime_comment_button.id = "new-question-button"
 		new_prime_comment_button.className = "btn btn-primary"
-		new_prime_comment_button.innerText = "Post a New Idea"
+		new_prime_comment_button.innerText = "Ask a New Question"
 		const linebreak = document.createElement('br')
 		new_prime_comment_button.appendChild(linebreak)
 		this.newQuestionFormDiv.append(new_prime_comment_button)
