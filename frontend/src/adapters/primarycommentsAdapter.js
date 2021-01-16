@@ -34,7 +34,7 @@ class PrimaryCommentsAdapter {
 
 	renderNewQuestionForm() {
 		const new_prime_comment_button = document.getElementById('new-question-button')
-		new_prime_comment_button.parentNode.removeChild(new_prime_comment_button)  // Removes 'Ask a New Question' button after it is clicked
+		new_prime_comment_button.parentNode.removeChild(new_prime_comment_button)  // Removes 'Post a New Idea' button after it is clicked
 
 		const question_form = document.createElement('form') // Create New Form Element
 		question_form.id = "new-question-form"
