@@ -17,7 +17,7 @@ class PrimaryCommentsAdapter {
 			user_id: jsonObject.user_id,
 			comment: jsonObject.comment
 		}
-		return fetch(this.primarycommentsUrl, {
+		return fetch(this.primarycommentsUrl, { // fetch from backend
 			method: "POST",
 			headers: {
 				'Content-Type': 'application/json'
@@ -86,7 +86,7 @@ class PrimaryCommentsAdapter {
 		cancel_form_button.id = "cancel-primary-form-button"
 		cancel_form_button.className = "btn btn-primary"
 		question_form.appendChild(cancel_form_button)
-		cancel_form_button.addEventListener("click", (event) => {
+		cancel_form_button.addEventListener("click", (event) => { //when user click, remove form
 			question_form.parentNode.removeChild(question_form)
 			new Users()
 		})
@@ -102,3 +102,10 @@ class PrimaryCommentsAdapter {
 		})
 	}
 }
+
+
+// add button for DOM
+// fetch data that needs ot be deleted
+// event listener for delete button
+// delete the second comments under the primary if primary is deleted
+// ---refresh the page to the "welcome" page

@@ -84,6 +84,7 @@ class PrimaryComments {
 			primary_comment_div.append(comment_para) // Append comment to the div
 
 			this.renderReplyButton(primary_comment, primary_comment_div)
+			this.renderDeleteButton(primary_comment, primary_comment_div)
 			this.primaryquestionsContainer.append(primary_comment_div)
 		})
 		new SecondaryComments(this.users)
@@ -102,9 +103,18 @@ class PrimaryComments {
 		})
 
 	}
+	renderDeleteButton(primary_comment, primary_comment_div) {
+		const delete_button = document.createElement('button') // Add delete button to Primary Comments
+		delete_button.id = "prime-comment-delete-button"
+		delete_button.setAttribute("data-id", primary_comment.id)
+		delete_button.innerText = "Delete"
+		delete_button.className = "btn btn-primary"
+		primary_comment_div.append(delete_button)
+		delete_button.addEventListener("click", () =>  {
+			// when button is click
+			// delete secondary comments under this primary
+			// delete primary comment
+			this.primary_comment.id
+		})
+	}
 }
-
-
-
-
-	

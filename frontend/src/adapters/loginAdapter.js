@@ -25,7 +25,7 @@ class LoginAdapter {  // Fetches User login information from API
 				login_form_div.parentNode.removeChild(login_form_div) // Removes Login form from DOM after User successfully log's in
 				new Users()
 			})
-			.catch(function(error) {
+			.catch(function(error) { //catch error and display it to user
 		    	alert("There was an error logging in!");
 		    	console.log(error.message)
 		 	})

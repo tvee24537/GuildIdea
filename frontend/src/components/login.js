@@ -1,7 +1,7 @@
 class Login {
 	constructor() {
 		this.BindingAndEventListeners()
-		this.adapter = new LoginAdapter()
+		this.adapter = new LoginAdapter() // using adpater to fetch data from API
 		this.renderLoginButton()
 	}
 
