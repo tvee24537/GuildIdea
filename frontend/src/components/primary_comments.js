@@ -115,7 +115,10 @@ class PrimaryComments {
 			// when button is click
 			// delete secondary comments under this primary
 			// delete primary comment
-			this.primary_comment.id
+			fetch(this.primary_comment.id, {
+				method: 'DELETE'
+			})
+			this.location.reload()
 		})
 	}
 }
