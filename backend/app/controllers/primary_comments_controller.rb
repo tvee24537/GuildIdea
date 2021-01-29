@@ -1,6 +1,6 @@
 class PrimaryCommentsController < ApplicationController
 
-	  def index
+	def index
   		primary_comments = PrimaryComment.all
       options = {
         include: [:user]
@@ -21,7 +21,13 @@ class PrimaryCommentsController < ApplicationController
         }
         render json: PrimaryCommentSerializer.new(primary_comments, options), status: 200
     	end
-  	end
+	end
+	  
+	def destroy
+		primary_comment = PrimaryComment.find(params[:id])
+		primary_comment.destroy
+	end
+
 
  	private
 

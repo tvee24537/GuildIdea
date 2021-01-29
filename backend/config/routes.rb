@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'sessions#new'
 	
   resources :secondary_comments, only: [:new, :index, :create]
-  resources :primary_comments, only:  [:new, :index, :create]
+  resources :primary_comments, only:  [:new, :index, :create, :destroy]
   resources :users, only: [:new, :index, :create, :destroy]
 
   get '/login' => 'sessions#new'
